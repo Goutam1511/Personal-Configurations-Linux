@@ -1,0 +1,55 @@
+  1 set nocompatible        " disable compatibility mode with vi
+  2
+  3 """" Basic Behavior
+  4
+  5 set number              " show line numbers
+  6 set wrap                " wrap lines
+  7 set wildmenu            " visual autocomplete for command menu
+  8 set lazyredraw          " redraw screen only when we need to
+  9 set showmatch           " highlight matching parentheses / brackets [{()}]
+ 10 set laststatus=2        " always show statusline (even with only single window)
+ 11 set ruler               " show line and column number of the cursor on right side of statusline
+ 12 set visualbell          " blink cursor on error, instead of beeping
+ 13
+ 14
+ 15 """" Key Bindings
+ 16
+ 17 " move vertically by visual line (don't skip wrapped lines)
+ 18 nmap j gj
+ 19 nmap k gk
+ 20
+ 21
+ 22 """" Vim Appearance
+ 23
+ 24 " put colorscheme files in ~/.vim/colors/
+ 25 colorscheme murphy      " good colorschemes: murphy, slate, molokai, badwolf, solarized
+ 26
+ 27 " use filetype-based syntax highlighting, ftplugins, and indentation
+ 28 syntax enable
+ 29 filetype plugin indent on
+ 30
+ 31
+ 32 """" Tab settings
+ 33
+ 34 set tabstop=4           " number of spaces per <TAB>
+ 35 set expandtab           " convert <TAB> key-presses to spaces
+ 36 set shiftwidth=4        " set a <TAB> key-press equal to 4 spaces
+ 37
+ 38 set autoindent          " copy indent from current line when starting a new line
+ 39 set smartindent         " even better autoindent (e.g. add indent after '{')
+ 40
+ 41
+ 42 """" Search settings
+ 43
+ 44 set incsearch           " search as characters are entered
+ 45 set hlsearch            " highlight matches
+ 46
+ 47 " turn off search highlighting with <CR> (carriage-return)
+ 48 nnoremap <CR> :nohlsearch<CR><CR>
+ 49
+ 50
+ 51 """" Miscellaneous settings that might be worth enabling
+ 52
+ 53 set cursorline         " highlight current line
+ 54 set background=dark    " configure Vim to use brighter colors
+ 55 set autoread           " autoreload the file in Vim if it has been changed outside of Vim
