@@ -1,0 +1,23 @@
+  1 startup_message off
+  2 #nethack on
+  3 #autodetach off
+  4
+  5 # define a bigger scrollback, default is 100 lines
+  6 defscrollback 10240
+  7
+  8 # ------------------------------------------------------------------------------
+  9 # SCREEN KEYBINDINGS
+ 10 # ------------------------------------------------------------------------------
+ 11
+ 12 # Remove some stupid / dangerous key bindings
+ 13 # bind ^k
+ 14 #bind L
+ 15 #bind ^\
+ 16 # Make them better
+ 17 bind \\ quit
+ 18 bind K kill
+ 19 bind I login on
+ 20 bind O login off
+ 21 bind } history
+ 22
+ 23 caption always "%{.bW}%-w%{.rW}%n %t%{-}%+w %=%{..G} %H %{..Y} %m/%d %C%a "
