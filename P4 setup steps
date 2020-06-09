@@ -1,0 +1,15 @@
+Paste these values in a file called .p4config in home dir
+
+export P4USER=<username>
+export P4CLIENT=<machine-name>
+export P4PORT=<P4 Service URL : Port>
+export PKGGET_DEPOTS=<Mount points>
+export P4DIFF=vimdiff
+
+Use command "source .p4config" in terminal to set perforce
+
+Create a perforce workspace directory by using a name such as "p4/perforce"
+
+Move to that directory and issue command p4 client
+
+Save the file and your perforce is configured
